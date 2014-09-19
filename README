@@ -16,6 +16,14 @@ Work unit     Real     usr + sys
 10000         55.02    108.97
 1000          56.61    112.06
 
+Work unit     Real     usr + sys    
+5000000       31.24    62.19
+2000000       28.46    67.28     
+1000000       28.18    70.69
+100000        25.85    70.77
+10000         26.43    71.84
+1000          27.72    73.91
+
 
 > The result of running [scala project1.scala 4]
 run 1,000,000 computations got following results:
