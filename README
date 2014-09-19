@@ -2,7 +2,7 @@ COP5615 Fall 2014 Project 1 Due Date: Sep 19, Midnight
 
 By 
 Shuang Lin 4263-6618
-Shuying Wang 
+Shuying Wang 3119-5133
 
 > Size of work unit
 
@@ -15,6 +15,8 @@ Work unit     Real     usr + sys
 100000        53.95    107.09
 10000         55.02    108.97
 1000          56.61    112.06
+
+It is for finding 5 zeros with 10,000,000. We tested 2, 3, 4, 10 actors as workers. The one with 3 actors performs best. So the result with different work unit below is based on 3 actors. The work unit with best performance is 100000 because its real time is the least. From the data below, we can tell the real time costed by the program becomes lesser and arrives the least at 100000 and then increases again. When the work unit is too small, there is more time spent in communication between master and workers. When the work unit is too big, the computation of worker actor becomes the bottleneck and can’t utilize the abilities of processors fully. There is a tradeoff on work unit and work distribution times.
 
 Work unit     Real     usr + sys    
 5000000       31.24    62.19
